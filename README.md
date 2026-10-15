@@ -1,46 +1,31 @@
-Interactive Task Board
+# Daymark — Kanban Lite
 
-This Task is to build a responsive, feature-rich **Interactive Task Board** ("Kanban Lite") using clean, standard web technologies.
+A responsive task board built with semantic HTML, CSS, and vanilla JavaScript. Tasks and appearance preference are stored locally in your browser.
 
-This project is designed to evaluate your understanding of HTML structure, modern CSS styling, state management with vanilla JavaScript, and persistent browser storage.
+## Features
 
----
+- Create tasks with a title, optional description, category, priority, and starting column.
+- Move tasks with the status menu or native drag and drop.
+- Search by title and filter by category.
+- See live task counts and active/completed totals.
+- Switch between light and dark appearance.
+- Use the board on desktop, tablet, or mobile.
 
-## Project Overview
+## Run locally
 
-You will create a client-side web application that allows users to organise, track, and filter daily tasks across three stages: **To Do**, **In Progress**, and **Completed**.
+Open `index.html` in a modern browser. No build step or dependencies are required. Google Fonts are optional; the page falls back to system sans-serif fonts.
 
----
+## Deploy with GitHub Pages
 
-## Features & Requirements
+1. Add these files to the root of your GitHub repository.
+2. In the repository, open **Settings → Pages**.
+3. Under **Build and deployment**, choose **Deploy from a branch**, select `main` and `/ (root)`, then save.
+4. Wait for the Pages deployment to finish. GitHub will show the live address in the Pages settings.
 
-### 1. Task Management (Core Functionality)
-* **Add Tasks:** A form allowing users to enter a task title, description, category (e.g., *Development*, *Design*, *Marketing*), and priority (*Low*, *Medium*, *High*).
-* **Move Tasks:** Capability to update a task's status between **To Do**, **In Progress**, and **Completed**.
-* **Delete Tasks:** Ability to remove tasks from the board.
-* **Persistence:** Save all tasks in browser `localStorage` so data survives page refreshes.
+## Storage
 
-### 2. User Interface & Experience
-* **Responsive Design:** Must adapt seamlessly to mobile, tablet, and desktop screens.
-* **Visual Priority Indicators:** Distinct colour coding for task priorities (*High* = Red/Coral, *Medium* = Amber, *Low* = Green).
-* **Filter & Search:** A search bar to filter tasks by title and a dropdown to filter by category.
+The board saves tasks and theme preference in `localStorage` on the current browser and device. It does not send task data to a server.
 
-### 3. Technical Constraints
-* Must use plain **HTML5**, **CSS3**, and **JavaScript (ES6+)** (No heavy JS frameworks like React, Angular, or Vue).
-* CSS preprocessing tools (like Sass) or utility frameworks (like Tailwind CSS) are allowed, but standard CSS is preferred.
-* Code should be well-commented and follow clean coding principles (proper indentation, semantic variable names).
+## License
 
----
-
-##  Bonus Features (Optional Stretch Goals)
-* **Drag and Drop:** Native HTML5 Drag and Drop API support to move tasks between columns.
-* **Dark Mode:** A toggle switch to change between light and dark visual themes.
-* **Task Counter:** A dynamic counter showing total active vs. completed tasks.
-
----
-
-##  Submission Guidelines
-1. Fork this repository to your personal GitHub account.
-2. Commit your work frequently with clear, concise commit messages.
-3. Host your live app using **GitHub Pages**.
-4. Submit the URL of your repository and the live demo link via email back to me to "TechLead" email.
+See [LICENSE.txt](LICENSE.txt).
